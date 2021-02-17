@@ -1,1 +1,31 @@
+html {
+	box-sizing: border-box;
+	}
+*, *:before, *:after {
+	box-sizing: inherit;
+	}
 
+    body {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 100%;
+	margin: 2em 10%;
+	line-height: 1;
+	}
+
+    form {
+	max-width: 40em;
+	border: 1px solid #666;
+	border-radius: 10px;
+	background-color:#f2f5d5;
+	padding: 1em;
+	}
+    
+    input{
+        display: block;
+        
+    }
+
+    .row-tab {
+          margin-top:10px;
+          
+    }

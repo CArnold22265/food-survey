@@ -15,22 +15,13 @@
     <p id="description"> Taking this short survey enables us to create more of the food that you enjoy. Thank you!</p>
 
 <form id="survey-form">
+  <ul>
+    <li><label id="name-label" for="name"> Name: </label><input id="name" type="text" name="name" placeholder="Gordon Ramsay" required></li>    
+    <li><label id="email-label" for="email" class="row-tab"> Email Address:</label><input id="email" type="email" name="name" Placeholder="G_Ramsay@yahoo.com" required></li>    
+    <li><label id="number-label" for="number"> Age </label><input id="number" type="number" name="number" min="8" max="100" placeholder="69" required></li>
     
-    <label id="name-label" for="name"> Name: </label>
-    <input id="name" type="text" name="name" placeholder="Gordon Ramsay" required>
-    </input>
-      <br>
-    <label id="email-label" for="email"> Email Address: </label>
-    <input id="email" type="email" name="name" Placeholder="G_Ramsay@yahoo.com" required>
-    </input>
-      <br>
-
-    <label id="number-label" for="number"> Age </label>
-    <input id="number" type="number" name="number" min="8" max="100" placeholder="69" required>
-    </input>
-      <br>
-
-    <label for="dropdown" id="cuisine"> Favorite Cuisine: </label>
+      
+    <li><label for="dropdown" id="cuisine"> Favorite Cuisine: </label>
     <select id="dropdown" class="dropdown">
         <option value="Italian"> Italian </option>
         <option value="New American"> New-American </option>
@@ -39,30 +30,42 @@
         <option value="Asian Cuisine"> Asian </option>
         <option value="other"> Other </option>
     </select>
-
-    <br>
+  </li>
+  
     
+    <li> 
     <label for="price-range">Whats your typical budget for a meal in a restaurant?</label>
-    <input type="radio" name="price" value="12$-or-less"> less than 12$</input>
-    <input type="radio" name="price" value="12-17$"> 12$-17$</input>
-    <input type="radio" name="price" value="18-25$"> 18$-25$</input>
-    <input type="radio" name="price" value="25$-30$">25$-30$</input>
-    <input type="radio" name="price" value="30$-and-up"> more than 30$</input>
-    <br>
+<fieldset id="price-range">
     
-    <label for="Foods-you-like"> Check all Boxes containing foods that you enjoy
-    </label>
-    <input type="checkbox" name="tasty" value="tomatoes"> Tomatoes</input>
-    <input type="checkbox" name="tasty" value="olives"> Olives</input>
-    <input type="checkbox" name="tasty" value="spinach"> Spinach</input>
-    <input type="checkbox" name="tasty" value="garlic"> Garlic</input>
-    <input type="checkbox" name="tasty" value="seafood"> Seafood</input>
-    <br>
+  <ul>
+    <li><input type="radio" name="price" value="12$-or-less"> less than 12$</input></li>
+    <li><input type="radio" name="price" value="12-17$"> 12$-17$</input></li>
+    <li><input type="radio" name="price" value="18-25$"> 18$-25$</input></li>
+    <li><input type="radio" name="price" value="25$-30$">25$-30$</input></li>
+    <li><input type="radio" name="price" value="30$-and-up"> more than 30$</input></li>
+  </ul>  
+</fieldset>
+    </li>
     
+    
+    <li>
+    <label for="Foods-you-like"> Check all Boxes containing foods that you enjoy</label>
+  <fieldset="foods-you-like">
+     
+  <ul>
+    <li><label><input type="checkbox" name="tasty" value="tomatoes"> Tomatoes</label></li> 
+    <li><label><input type="checkbox" name="tasty" value="olives"> Olives</label></li>
+    <li><label><input type="checkbox" name="tasty" value="spinach"> Spinach</label></li>
+    <li><label><input type="checkbox" name="tasty" value="garlic"> Garlic</label></li>
+    <li><label><input type="checkbox" name="tasty" value="seafood"> Seafood</label></li>
+  </ul>  
+  </fieldset>
+    
+
     <label id="text-area"> Comments </label>
     <textarea id="textarea" name="instructions" rows="5" cols="40">
     </textarea>
-    <br>
+    
     
     <input id="submit" type="submit">
     </input>
