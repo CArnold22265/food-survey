@@ -1,31 +1,51 @@
-html {
-	box-sizing: border-box;
-	}
-*, *:before, *:after {
-	box-sizing: inherit;
-	}
+@import url('http://fonts.cdnfonts.com/css/gotham-rounded-medium');
 
-    body {
-	font-family: Verdana, Geneva, sans-serif;
-	font-size: 100%;
-	margin: 2em 10%;
-	line-height: 1;
-	}
+:root{
+	font-family: 'gotham rounded light';
+	color: var(--color-text-light)
 
-    form {
-	max-width: 40em;
-	border: 1px solid #666;
-	border-radius: 10px;
-	background-color:#f2f5d5;
-	padding: 1em;
-	}
-    
-    input{
-        display: block;
-        
-    }
+}
 
-    .row-tab {
-          margin-top:10px;
-          
-    }
+body{
+	background: linear-gradient(to right, var(--color-background-dark), var(--color-background-light));
+
+}
+
+
+fieldset {
+	padding: 0;
+	border: none;
+}
+
+
+.container{
+	max-width:1200px;
+	margin: auto;
+	margin-bottom: 3rem;
+}
+
+
+
+      .btn {
+	border: 1px solid;
+	border-radius: 4px;
+	padding:.5rem 1rem;
+	font-size: 1.2rem;
+	font-family: 'gotham rounded medium';
+	cursor:pointer;
+	text-decoration: none;
+	text-align: center;
+	color: var(--color-btn-txt);
+	background-color: var(--color-btn-bg);
+	border: 1px solid black;
+	display:block;
+}
+
+      .btn:hover{
+	background-color:var(--color-btn-bg-hover);
+	font: var(--color-btn-txt-hover);
+	border-radius: 4px;
+	padding:.5rem 1rem;
+	font-size: 1.2rem;
+	border: 2px solid black;
+}
