@@ -16,7 +16,7 @@
     <h1 id="title"> Restaurant Dining Survey</h1>
     <p id="description"> Taking this short survey enables us to create more of the food that you enjoy. Thank you!</p>
 
-<div class="container"> 
+
 <form id="survey-form">
   <ul>
     <li><label id="name-label" for="name"> Name: </label><input id="name" type="text" name="name" placeholder="Gordon Ramsay" required></li>    
@@ -37,33 +37,35 @@
   
     
     <li> 
-    <label for="price-range">Whats your typical budget for a meal in a restaurant?</label>
+    <label for="price-range" class="radio-label">Whats your typical budget for a meal in a restaurant?</label>
 <fieldset id="price-range" >
     
-  <ul>
-    <li><input type="radio" name="price" value="12$-or-less"> less than 12$</input></li>
-    <li><input type="radio" name="price" value="12-17$"> 12$-17$</input></li>
-    <li><input type="radio" name="price" value="18-25$"> 18$-25$</input></li>
-    <li><input type="radio" name="price" value="25$-30$">25$-30$</input></li>
-    <li><input type="radio" name="price" value="30$-and-up"> more than 30$</input></li>
+  <ul class="radio-container">
+    <li class="radio-btn"><input type="radio" name="price" value="12$-or-less"> less than 12$</input></li>
+    <li class="radio-btn"><input type="radio" name="price" value="12-17$"> 12$-17$</input></li>
+    <li class="radio-btn"><input type="radio" name="price" value="18-25$"> 18$-25$</input></li>
+    <li class="radio-btn"><input type="radio" name="price" value="25$-30$">25$-30$</input></li>
+    <li class="radio-btn"><input type="radio" name="price" value="30$-and-up"> more than 30$</input></li>
   </ul>  
 </fieldset>
     </li>
     
+  <div>  
+    <fieldset>  
     
-    <li>
-    <label for="Foods-you-like"> Check all Boxes containing foods that you enjoy</label>
-  <fieldset="foods-you-like">
-     
-  <ul>
-    <li><label><input type="checkbox" name="tasty" value="tomatoes"> Tomatoes</label></li> 
-    <li><label><input type="checkbox" name="tasty" value="olives"> Olives</label></li>
-    <li><label><input type="checkbox" name="tasty" value="spinach"> Spinach</label></li>
-    <li><label><input type="checkbox" name="tasty" value="garlic"> Garlic</label></li>
-    <li><label><input type="checkbox" name="tasty" value="seafood"> Seafood</label></li>
-  </ul>  
-  </fieldset>
-    
+      <label for="Foods-you-like" class="checkbox-label"> Check all Boxes containing foods that you enjoy:</label>
+  
+        <fieldset id="foods-you-like">   
+          <ul class="checkbox-container">
+            <li><label><input type="checkbox" name="tasty" value="tomatoes"> Tomatoes</label></li> 
+            <li class="cbox"><label><input type="checkbox" name="tasty" value="olives"> Olives</label></li>
+            <li class="cbox"><label><input type="checkbox" name="tasty" value="spinach"> Spinach</label></li>
+            <li class="cbox"><label><input type="checkbox" name="tasty" value="garlic"> Garlic</label></li>
+            <li class="cbox"><label><input type="checkbox" name="tasty" value="seafood"> Seafood</label></li>
+          </ul>  
+        </fieldset>  
+  </div>
+  
 
     <label id="text-area"> Comments </label>
     <textarea id="textarea" name="instructions" rows="5" cols="40">

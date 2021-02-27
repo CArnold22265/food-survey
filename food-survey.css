@@ -12,18 +12,21 @@ body{
 }
 
 
-fieldset {
-	padding: 0;
+fieldset{
 	border: none;
 }
 
-
-.container{
-	max-width:1200px;
-	margin: auto;
-	margin-bottom: 3rem;
+ul {
+	list-style-type: none;
 }
 
+label{
+	margin-bottom: 5px;
+	text-align:center;
+}
+ .cbox{
+	 margin-left: 3.125rem;
+ }
 
 
       .btn {
@@ -38,7 +41,7 @@ fieldset {
 	color: var(--color-btn-txt);
 	background-color: var(--color-btn-bg);
 	border: 1px solid black;
-	display:block;
+	
 }
 
       .btn:hover{
@@ -49,3 +52,42 @@ fieldset {
 	font-size: 1.2rem;
 	border: 2px solid black;
 }
+
+.checkbox-container {   
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;	
+}
+
+.checkbox-label {
+	 display:flex;
+	 flex-direction:center;
+	 font-family:Verdana, Geneva, Tahoma, sans-serif;
+	 font-size: 20px;
+	 justify-content: center;
+	 margin-top: 20px;
+ }
+}
+
+.cbox {
+	 margin-left: 3.125rem;
+ }
+
+ .radio-container {
+	 display:flex;
+	 flex-direction: row;
+	 justify-content: center;
+ }
+
+ .radio-btn {
+	 margin-left:3.125rem;
+ }
+
+ .radio-label {
+	 display:flex;
+	 flex-direction:center;
+	 font-family:Verdana, Geneva, Tahoma, sans-serif;
+	 font-size: 20px;
+	 justify-content: center;
+ }
