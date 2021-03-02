@@ -1,1 +1,149 @@
+@import url('http://fonts.cdnfonts.com/css/gotham-rounded-medium');
 
+:root{
+	font-family: 'gotham rounded light';
+	color: var(--color-text-light)
+
+}
+
+
+body{
+	background: linear-gradient(to right, var(--color-background-dark), var(--color-background-light));
+    align-content: center;
+}
+
+
+fieldset{
+	border: none;
+}
+
+ul, li {
+	list-style-type: none;
+}
+
+label{
+	margin-bottom: 5px;
+	text-align:center;
+}
+
+h1, p {
+	text-align: center;
+}
+
+textarea {
+	max-width: 60%;
+}
+
+.flex1-container {
+	display:flex;
+	flex-direction: row;
+	justify-content:space-around;
+	margin: 0 10% 0 10%;			
+}
+
+.form-item{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-bottom: .5rem;
+	
+}
+
+
+ .cbox{
+	margin-left: 3.125rem;
+ }
+
+
+      .btn {
+	border: 1px solid;
+	border-radius: 4px;
+	padding:.5rem 1rem;
+	font-size: 1.2rem;
+	font-family: 'gotham rounded medium';
+	cursor:pointer;
+	text-decoration: none;
+	text-align: center;
+	color: var(--color-btn-txt);
+	background-color: var(--color-btn-bg);
+	border: 1px solid black;
+    margin:.5rem 30% 0 30%;	
+
+	
+}
+
+      .btn:hover{
+	background-color:var(--color-btn-bg-hover);
+	font: var(--color-btn-txt-hover);
+	border-radius: 4px;
+	padding:.5rem 1rem;
+	font-size: 1.2rem;
+	border: 2px solid black;
+}
+
+.checkbox-container {   
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;	
+}
+
+.checkbox-label {
+	 display:flex;
+	 flex-direction:center;
+	 font-family:'gotham rounded medium';
+	 font-size: 1.25rem;
+	 justify-content: center;
+	 transform:translatey(1.25rem);
+	 
+ }
+
+
+.cbox {
+	
+	 display:flex;
+	 align-items: flex-start;
+	 transform:translateX(2rem);
+	 margin-right:2rem;
+	 
+ }
+
+ .radio-container {
+	 display:flex;
+	 flex-direction: row;
+	 justify-content: center;
+	 align-items:center;
+	 
+	 	 
+ }
+
+ .radio-btn {
+	 margin-left: 2.9rem;
+ }
+
+ .radio-label {
+	 display:flex;
+	 flex-direction:center;
+	 font-family:'gotham rounded medium';
+	 font-size: 1.25rem;
+	 justify-content: center;
+	 margin-top: 1.25rem;
+ }
+
+ .comment-container{
+	 display:flex;
+	 flex-direction: column;
+	 align-content: center;
+	 justify-content: center;
+	 
+ }
+
+ .comment-box {
+	 display:flex;
+	 flex-direction: column;
+	 align-self: center;
+	 background-color: green;
+	 
+ }
+
+ 
